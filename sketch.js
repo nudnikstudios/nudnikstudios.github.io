@@ -21,11 +21,11 @@ function setup() {
     let pt = points[i];
     
     if (points.length[i] < 128) {
-        color = bipink;
+        vColor = bipink;
     } else if (points.length[i] > 128 && points.length[i] < 256) {
-        color = biPurple;
+        vColor = biPurple;
     } else {
-        color = biBlue;
+        vColor = biBlue;
     }
     let vehicle = new Vehicle(pt.x, pt.y, vColor);
     vehicles.push(vehicle);   
