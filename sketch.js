@@ -23,7 +23,7 @@ function setup() {
     let vColor;
     if (i < 252) {
         vColor = biPink;
-    } else if (i > 253 && i < 531) {
+    } else if (i > 253 && i < 533) {
         vColor = biPurple;
     } else {
         vColor = biBlue;
