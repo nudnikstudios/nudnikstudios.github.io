@@ -3,7 +3,7 @@ let vehicles = [];
 let biPink = [214,2,112];
 let biBlue = [0,56,168];
 let biPurple = [155,79,150];
-let vColor;
+
 function preload() {
   font = loadFont('Goldman-Bold.ttf');
 }
@@ -28,7 +28,7 @@ function setup() {
         vColor = biBlue;
     }
     let vehicle = new Vehicle(pt.x, pt.y, vColor);
-    vehicles.push(vehicle);   
+    vehicles.push(vehicle);
   }
 
   console.log(points.length);

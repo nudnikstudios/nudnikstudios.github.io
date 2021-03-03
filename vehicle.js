@@ -6,6 +6,7 @@ function Vehicle(x, y, vColor) {
   this.r = 8;
   this.maxspeed = 10;
   this.maxforce = 1;
+  this.vColor = vColor;
 }
 
 Vehicle.prototype.behaviors = function() {
@@ -30,8 +31,8 @@ Vehicle.prototype.update = function() {
   this.acc.mult(0);
 };
 
-Vehicle.prototype.show = function(vColor) {
-  stroke(vColor[0],vColor[1],vColor[2]);
+Vehicle.prototype.show = function() {
+  stroke(this.vColor[0],this.vColor[1],this.vColor[2]);
   strokeWeight(this.r);
   point(this.pos.x, this.pos.y);
 };
