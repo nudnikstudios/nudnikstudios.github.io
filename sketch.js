@@ -3,6 +3,7 @@ let vehicles = [];
 let biPink = [214,2,112];
 let biBlue = [0,56,168];
 let biPurple = [155,79,150];
+wordLength = 6;
 
 function preload() {
   font = loadFont('Goldman-Bold.ttf');
@@ -20,9 +21,9 @@ function setup() {
   for (let i = 0; i < points.length; i++) {
     let pt = points[i];
     let vColor;
-    if (i < 129) {
+    if (i < 257) {
         vColor = biPink;
-    } else if (i > 128 && i < 256) {
+    } else if (i > 256 && i < 514) {
         vColor = biPurple;
     } else {
         vColor = biBlue;
