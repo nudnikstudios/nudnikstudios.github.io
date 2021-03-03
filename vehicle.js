@@ -1,4 +1,4 @@
-function Vehicle(x, y) {
+function Vehicle(x, y, c) {
   this.pos = createVector(random(width), random(height));
   this.target = createVector(x, y);
   this.vel = p5.Vector.random2D();
@@ -30,8 +30,8 @@ Vehicle.prototype.update = function() {
   this.acc.mult(0);
 };
 
-Vehicle.prototype.show = function() {
-  stroke(255);
+Vehicle.prototype.show = function(c) {
+  stroke(c[0],c[1],c[2]);
   strokeWeight(this.r);
   point(this.pos.x, this.pos.y);
 };
