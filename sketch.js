@@ -3,14 +3,15 @@ var vehicles = [];
 
 function preload() {
   font = loadFont('Goldman-Bold.ttf');
+  altFont = "Arial"
 }
 
 function setup() {
-    let canvas = createCanvas(windowWidth, 800);
+    let canvas = createCanvas(windowWidth, 400);
     canvas.parent('sketch-holder');
   background(51);
 
-  var points = font.textToPoints('nudnik', 100, 200, 192, {
+  var points = altfont.textToPoints('nudnik', 200, 200, 192, {
     sampleFactor: 0.25
   });
 
