@@ -3,23 +3,22 @@ var vehicles = [];
 
 function preload() {
   font = loadFont('Goldman-Bold.ttf');
-  altFont = "Arial"
+  
 }
 
 function setup() {
-    let canvas = createCanvas(windowWidth, 400);
+    let canvas = createCanvas(800, 400);
     canvas.parent('sketch-holder');
-  background(51);
+    background(51);
 
-  var points = altfont.textToPoints('nudnik', 200, 200, 192, {
+  var points = font.textToPoints('nudnik', 250, 200, 192, {
     sampleFactor: 0.25
   });
 
   for (var i = 0; i < points.length; i++) {
     var pt = points[i];
     var vehicle = new Vehicle(pt.x, pt.y);
-    vehicles.push(vehicle);
-    
+    vehicles.push(vehicle);   
   }
 }
 
