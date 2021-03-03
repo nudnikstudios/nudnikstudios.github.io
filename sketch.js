@@ -6,7 +6,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 300);
+    let canvas = createCanvas(windowWidth, windowHeight);
+    canvas.parent('sketch-holder');
   background(51);
   // textFont(font);
   // textSize(192);
@@ -14,7 +15,7 @@ function setup() {
   // noStroke();
   // text('train', 100, 200);
 
-  var points = font.textToPoints('train', 100, 200, 192, {
+  var points = font.textToPoints('nudnik', 100, 200, 192, {
     sampleFactor: 0.25
   });
 
