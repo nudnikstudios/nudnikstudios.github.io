@@ -20,14 +20,12 @@ function setup() {
   for (let i = 0; i < points.length; i++) {
     let pt = points[i];
     let color;
-    for (j = 0; j <points.length; j++) {
-        let count = points.length / 6;
-        return points.length;
-        return count;
-    }
-    let vehicle = new Vehicle(pt.x, pt.y, colors[0]);
+    let vehicle = new Vehicle(pt.x, pt.y);
     vehicles.push(vehicle);   
   }
+
+  console.log(points.length);
+  console.log(points.length/6);
 
 }
 
