@@ -19,10 +19,10 @@ function setup() {
 
   for (let i = 0; i < points.length; i++) {
     let pt = points[i];
-    
-    if (points.length[i] < 128) {
-        vColor = bipink;
-    } else if (points.length[i] > 128 && points.length[i] < 256) {
+    let vColor;
+    if (i < 129) {
+        vColor = biPink;
+    } else if (i > 128 && i < 256) {
         vColor = biPurple;
     } else {
         vColor = biBlue;
