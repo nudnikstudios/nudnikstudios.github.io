@@ -6,14 +6,9 @@ function preload() {
 }
 
 function setup() {
-    let canvas = createCanvas(windowWidth, windowHeight);
+    let canvas = createCanvas(windowWidth, 800);
     canvas.parent('sketch-holder');
   background(51);
-  // textFont(font);
-  // textSize(192);
-  // fill(255);
-  // noStroke();
-  // text('train', 100, 200);
 
   var points = font.textToPoints('nudnik', 100, 200, 192, {
     sampleFactor: 0.25
@@ -23,9 +18,7 @@ function setup() {
     var pt = points[i];
     var vehicle = new Vehicle(pt.x, pt.y);
     vehicles.push(vehicle);
-    // stroke(255);
-    // strokeWeight(8);
-    // point(pt.x, pt.y);
+    
   }
 }
 
