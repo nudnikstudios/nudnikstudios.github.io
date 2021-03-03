@@ -3,7 +3,6 @@ var vehicles = [];
 
 function preload() {
   font = loadFont('Goldman-Bold.ttf');
-  
 }
 
 function setup() {
