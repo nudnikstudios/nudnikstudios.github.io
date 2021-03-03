@@ -30,8 +30,8 @@ Vehicle.prototype.update = function() {
   this.acc.mult(0);
 };
 
-Vehicle.prototype.show = function(c) {
-  stroke(c[0],c[1],c[2]);
+Vehicle.prototype.show = function() {
+  stroke(colors[0[0]],colors[1[1]],colors[2[2]]);
   strokeWeight(this.r);
   point(this.pos.x, this.pos.y);
 };
