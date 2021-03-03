@@ -6,11 +6,11 @@ function preload() {
 }
 
 function setup() {
-    let canvas = createCanvas(800, 400);
+    let canvas = createCanvas(800, 250);
     canvas.parent('sketch-holder');
     background(51);
 
-  var points = font.textToPoints('nudnik', 250, 200, 192, {
+  var points = font.textToPoints('nudnik', 50, 200, 192, {
     sampleFactor: 0.25
   });
 
